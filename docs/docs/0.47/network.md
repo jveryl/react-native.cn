@@ -79,7 +79,7 @@ fetch('https://mywebsite.com/endpoint/', {
 
 别忘了catch住`fetch`可能抛出的异常，否则出错时你可能看不到任何提示。
 
-> 默认情况下，iOS会阻止所有非https的请求。如果你请求的接口是http协议，那么首先需要添加一个App Transport Security的例外，详细可参考[这篇帖子](https://segmentfault.com/a/1190000002933776)。
+> 默认情况下，iOS会阻止所有非https的请求。如果你请求的接口是http协议，那么首先需要添加一个App Transport Security的例外(iOS10以后版本的童鞋,注意了: 如果配置了其他的key,那NSAllowsArbitraryLoads会被忽略的)，详细可参考[这篇帖子](https://segmentfault.com/a/1190000002933776)。
 
 
 ### 使用其他的网络库
